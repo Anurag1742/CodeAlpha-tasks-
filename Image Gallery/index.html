@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Masonry Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>My Image Gallery</h1>
+    <div class="filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="nature">Nature</button>
+      <button class="filter-btn" data-category="city">City</button>
+      <button class="filter-btn" data-category="office">Office</button>
+      <button class="filter-btn" data-category="anime">Anime</button>
+      <button class="filter-btn" data-category="female_anime">Female Anime</button>
+      <button class="filter-btn" data-category="Romance">Romantic</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="gallery-masonry" id="galleryContainer">
+      <!-- Images injected by JS -->
+    </div>
+    <div class="pagination-controls">
+      <button id="prevBtn">Previous</button>
+      <span id="pageIndicator"></span>
+      <button id="nextBtn">Next</button>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" />
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
